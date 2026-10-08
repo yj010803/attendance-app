@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>출석</title>
+    <meta name="theme-color" content="#f5f6fb" />
+    <meta name="description" content="자리배치표에서 탭으로 아침 지각을 기록하는 우리반 출석 체크" />
+    <!-- 홈화면 추가용 -->
+    <link rel="manifest" href="/attendance-app/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/attendance-app/icon.svg" />
+    <!-- 아이폰 홈화면은 SVG 를 못 읽는다. 180×180 PNG 를 따로 둔다 -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/attendance-app/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="출석" />
+    <!-- 글씨 두 벌을 파일로 직접 안고 간다. 바깥 CDN 이 없다.
+         먼저 보이는 글자가 본문(이름)이므로 원티드 산스를 먼저 당겨 온다. -->
+    <link rel="preload" href="/attendance-app/fonts/wantedsans-b.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/attendance-app/fonts/wantedsans-r.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/attendance-app/fonts/paperlogy-b.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/attendance-app/fonts/paperlogy-r.woff2" as="font" type="font/woff2" crossorigin />
+    <script type="module" crossorigin src="/attendance-app/assets/index-BUOk_ufO.js"></script>
+    <link rel="stylesheet" crossorigin href="/attendance-app/assets/index-Dk4RL9-I.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
